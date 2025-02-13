@@ -1,0 +1,5 @@
+CREATE TABLE scanned_codes (
+    id SERIAL PRIMARY KEY,
+    code_value TEXT NOT NULL UNIQUE,
+    scan_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
